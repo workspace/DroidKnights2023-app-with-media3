@@ -1,10 +1,9 @@
 package com.droidknights.app.core.data.session
 
 import com.droidknights.app.core.data.session.model.SessionResponse
-import com.droidknights.app.core.network.api.DroidKnightsNetwork
-import com.droidknights.app.core.network.api.get
+import com.droidknights.app.core.network.DroidKnightsNetwork
 
-class SessionApi(
+internal class SessionApi(
     private val network: DroidKnightsNetwork,
 ) {
     suspend fun getSessions(): List<SessionResponse> =

@@ -70,7 +70,6 @@ include(
 // core - network
 include(
     ":core:network:network",
-    ":core:network:network-api",
 )
 // feature
 include(
